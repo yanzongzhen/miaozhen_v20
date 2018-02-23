@@ -1,0 +1,91 @@
+{% extends '../base/base.html' %}
+
+{% block body_wrapper %}
+<!-- Blog Single Post Section -->
+
+<section id="blog-single-post">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="blog-single-post-thumb">
+                         <div class="blog-post-title">
+                              <h2>{{blog.title}}</a></h2>
+                         </div>
+
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src="{{static_url('images/author-image1.jpg')}}" class="img-responsive img-circle">Miaozhen</a></span>
+                              <span><i class="fa fa-date"></i>{{blog.createtime}}</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i>{{len(blog.comments)}}</a></span>
+                              <span><a href="#"><i class="fa fa-read-o"></i></a>阅读数{{blog.readnum}}</span>
+                         </div>
+
+                         <div class="blog-post-des">
+                              <p>{% raw blog.content %}</p>
+                         </div>
+                         <div class="blog-comment">
+                              <h3>{{len(blog.comments)}} Comments</h3>
+	                         {% for comment in comments %}
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <img src="{{static_url('images/comment-image1.jpg')}}" class="img-responsive img-circle" alt="Blog Image">
+                                        </div>
+                                        <div class="media-body">
+                                             <h3 class="media-heading">{{comment.name}}</h3>
+                                                  <span>{{comment.createtime}}</span>
+                                                  <p>{{comment.msg}}</p>
+                                        </div>
+                                   </div>
+	                         {%  end %}
+                         </div>
+
+                         <div class="blog-comment-form">
+                              <h3>评论区</h3>
+                                   <form>
+                                        <textarea class="form-control" id="comments-input" placeholder="评论" rows="5" name="Comments" required></textarea>
+                                        <input type="text"  id="name-input" class="form-control" placeholder="姓名" name="name" required>
+                                        <input type="email" id="email-input" class="form-control" placeholder="邮箱" name="email" required>
+                                        <div class="col-md-3 col-sm-4">
+	                                        <button type="button" data-id="{{blog.id}}" class="form-control" id="submit-btn" style="color:white;background: black">评论</button>
+                                        </div>
+                                   </form>
+	                         <script>
+		                         $(document).ready(function () {
+			                         $('#submit-btn').click(function () {
+				                         var Comments = $('#comments-input').val();
+				                         var name = $('#name-input').val();
+				                         var email = $('#email-input').val();
+				                         var blog_id = $('#submit-btn').attr('data-id');
+				                         $.ajax({
+					                        'url':'/single-post',
+					                        'type':'post',
+					                        'data':{
+					                            'Comments':Comments,
+						                        'name':name,
+						                        'email':email,
+						                        'blog_id':blog_id
+					                        },
+					                     'success': function (data) {
+								                if(data['status'] == 200){
+								                     swal({
+								                            'title': '添加评论成功',
+								                            'text': data['msg'],
+								                            'type': 'success',
+								                            'showCancelButton': false,
+								                            'showConfirmButton': false,
+								                            'timer': 1000,
+								                     },function () {
+								                         location.reload();
+								                     })
+								                }
+								            }
+				                         });
+                                     })
+                                 })
+	                         </script>
+                         </div>
+                    </div>
+          </div>
+     </div>
+</section>
+{% end %}

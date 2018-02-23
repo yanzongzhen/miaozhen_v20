@@ -1,0 +1,85 @@
+{% extends '../base/base.html' %}
+
+{% block body_wrapper %}
+
+<section id="contact">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="section-title">
+                         <h3>Get in touch</h3>
+                         <h2>开源 & 创新.我们一直致力于科技创新，争分夺秒，对未来志在必得 </h2>
+                    </div>
+
+                    <form>
+
+                         <div class="col-md-6 col-sm-6">
+                              <input type="text" class="form-control" id="name-input" placeholder="姓名" name="name">
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <input type="email" class="form-control" id="email-input" placeholder="邮箱" name="email">
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <input type="telephone" class="form-control" id="phone-input" placeholder="电话号码" name="phone">
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <input type="text" name="address" class="form-control" id="address-input" placeholder="联系地址">
+                         </div>
+                         <div class="col-md-12 col-sm-12"> 
+                              <textarea class="form-control" rows="5" id="details-input" placeholder="项目细节" name="details"></textarea>
+                         </div>
+                         <div class="col-md-3 col-sm-4">
+                             <button type="button" class="form-control" id="submit-detail-btn" style="background: black;color: white;">Send Message</button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </div>
+    <script>
+        $(document).ready(function () {
+            $('#submit-detail-btn').click(function () {
+                var name = $('#name-input').val();
+                var email = $('#email-input').val();
+                var phone = $('#phone-input').val();
+                var address = $('#address-input').val();
+                var details = $('#details-input').val();
+
+                $.ajax({
+                    'url':'/contact',
+                    'type': 'post',
+                    'data': {
+                        'name':name,
+                        'email':email,
+                        'phone':phone,
+                        'address':address,
+                        'details':details
+                    },
+                    'success':function (data) {
+                        if(data['status'] == 200){
+                            swal({
+                                'title': '正确',
+                                'text': data['msg'],
+                                'type': 'success',
+                                'showCancelButton': false,
+                                'showConfirmButton': false,
+                                'timer': 1000,
+                            },function () {
+                               window.location = '/contact';
+                            });
+                        }else{
+                           swal({
+                                'title': '错误',
+                                'text': data['msg'],
+                                'type': 'error',
+                                'showCancelButton': false,
+                                'showConfirmButton': false,
+                                'timer': 1000,
+                            })
+                        }
+                    }
+                });
+            });
+        })
+    </script>
+</section>
+{% end %}
