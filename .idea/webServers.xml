@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="54dfb6b7-9611-4595-98a6-fea8d0ed9748" name="miaozhen" url="http://127.0.0.1">
+        <fileTransfer host="127.0.0.1" port="4567" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="4567" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

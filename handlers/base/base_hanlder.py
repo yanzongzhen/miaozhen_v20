@@ -6,8 +6,10 @@ from libs.db.dbsession import dbSession
 from libs.redis_conn.redis_conn import conn
 import tornado.websocket
 
+from models.accounts.account_user_model import User
+
 users = {
-    'user': 'admin'
+    'user': User
 }
 
 class BaseHandler(tornado.web.RequestHandler, SessionMixin):
@@ -23,7 +25,7 @@ class BaseHandler(tornado.web.RequestHandler, SessionMixin):
         user = None
         if username:
             pass
-            # user = User.by_name(username)
+            user = User.by_name(username)
         return user if user else None
 
     def on_finish(self):
@@ -42,7 +44,7 @@ class BaseWebSocketHandler(tornado.websocket.WebSocketHandler, SessionMixin):
         user = None
         if username:
             pass
-            # user = User.by_name(username)
+            user = User.by_name(username)
         return user if user else None
 
     def on_finish(self):

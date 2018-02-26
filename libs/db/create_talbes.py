@@ -1,6 +1,6 @@
 #coding=utf-8
-from dbsession import engine
-from dbsession import Base
+from libs.db.dbsession import engine
+from libs.db.dbsession import Base
 
 #将创建好的User类，映射到数据库的users表中
 def run():
