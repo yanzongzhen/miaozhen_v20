@@ -11,6 +11,9 @@ from models.article_model.article_model import *
 from models.Blog_model.blog_model import *
 from models.contact_model.contact_model import*
 
+from models.flink_model.flink_model import *
+from models.setting_model.setting_model import *
+
 from libs.db import create_talbes
 from libs.db.dbsession import dbSession
 

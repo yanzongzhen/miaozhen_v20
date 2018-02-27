@@ -24,10 +24,10 @@
     <table class="table table-striped table-hover">
       <tbody>
         <tr>
-          <td>登录者: <span>admin</span>，这是您第 <span>13</span> 次登录</td>
+          <td>登录者: <span>{{current_user.name}}</span>，这是您第 <span>13</span> 次登录</td>
         </tr>
         <tr>
-          <td>上次登录时间: 2016-01-08 15:50:28 , 上次登录IP: ::1:55570</td>
+          <td>上次登录时间:{{users.last_login}} 登陆IP:{{remote_ip}}</td>
         </tr>
       </tbody>
     </table>
@@ -59,13 +59,13 @@
         </tr>
         <tr>
           <td>登录者IP:</td>
-          <td>::1:55570</td>
+          <td>{{remote_ip}}</td>
           <td>MYSQL版本:</td>
           <td>5.5.40</td>
         </tr>
         <tr>
           <td>程序版本:</td>
-          <td class="version">YlsatCMS 1.0 <font size="-6" color="#BBB">(20160108160215)</font></td>
+          <td class="version">miazhenCMS 2.0</td>
           <td>上传文件:</td>
           <td>可以 <font size="-6" color="#BBB">(最大文件：2M ，表单：8M )</font></td>
         </tr>
@@ -73,7 +73,7 @@
           <td>程序编码:</td>
           <td>UTF-8</td>
           <td>当前时间:</td>
-          <td>2016-01-08 15:50:30</td>
+          <td><span id="show-time"></span></td>
         </tr>
       </tbody>
       <tfoot>
@@ -87,10 +87,10 @@
     <table class="table table-striped table-hover">
       <tbody>
         <tr>
-          <td><span style="display:inline-block; width:8em">版权所有</span> POWERED BY WY ALL RIGHTS RESERVED</td>
+          <td><span style="display:inline-block; width:8em">版权所有</span> POWERED BY MZ ALL RIGHTS RESERVED</td>
         </tr>
         <tr>
-          <td><span style="display:inline-block;width:8em">页面加载时间</span> PROCESSED IN 1.0835s  SECONDS 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></td>
+          <td><span style="display:inline-block;width:8em">页面加载时间</span> PROCESSED IN 1.0835s  SECONDS</td>
         </tr>
       </tbody>
     </table>
@@ -99,6 +99,20 @@
 </div>
 </div>
 </section>
+<script type="text/javascript">
+	$(function(){
+		setInterval("getTime();",1000); //每隔一秒运行一次
+	})
+	//取得系统当前时间
+	function getTime(){
+		var myDate = new Date();
+		var date = myDate.toLocaleDateString();
+		var hours = myDate.getHours();
+		var minutes = myDate.getMinutes();
+		var seconds = myDate.getSeconds();
+		$("#show-time").html(date+" "+hours+":"+minutes+":"+seconds); //将值赋给div
+	}
+</script>
 {% end %}
 
 {% block end %}{% end %}

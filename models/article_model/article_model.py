@@ -20,10 +20,12 @@ class Article(Base):
     title = Column(String(50))
     desc = Column(Text)
     thumbnail = Column(Text)
+    keywords = Column(String(50))
+    tags = Column(String(50))
     readnum = Column(Integer, default=0)
     content = Column(Text)
     createtime = Column(DateTime, index=True, default=datetime.now)
-    article_pic_name = Column(String(50), nullable=False)
+    article_pic_name = Column(String(50))
     state =Column(Boolean,default=False)
     opened = Column(Boolean,default=False)
 
@@ -61,7 +63,7 @@ class Category(Base):
     createtime = Column(DateTime, index=True, default=datetime.now)
     keywords = Column(String(50), unique=True, )
     desc = Column(Text)
-
+    tags = Column(String(50))
     # 建立orm查询关系,分类表与文章表的一对多关系
     articles = relationship('Article', backref='category')
 

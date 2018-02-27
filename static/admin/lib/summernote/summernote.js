@@ -1996,7 +1996,7 @@
         shapeNone: 'Shape: None',
         dragImageHere: 'Drag image or text here',
         dropImage: 'Drop image or Text',
-        selectFromFiles: 'Select from files',
+        selectFromFiles: 'Select from articles',
         maximumFileSize: 'Maximum file size',
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'Image URL',
@@ -5925,9 +5925,9 @@
         imageLimitation = '<small>' + lang.image.maximumFileSize + ' : ' + readableSize + '</small>';
       }
 
-      var body = '<div class="form-group note-group-select-from-files">' +
+      var body = '<div class="form-group note-group-select-from-articles">' +
                    '<label>' + lang.image.selectFromFiles + '</label>' +
-                   '<input class="note-image-input form-control" type="file" name="files" accept="image/*" multiple="multiple" />' +
+                   '<input class="note-image-input form-control" type="file" name="articles" accept="image/*" multiple="multiple" />' +
                    imageLimitation +
                  '</div>' +
                  '<div class="form-group" style="overflow:auto;">' +
@@ -5965,7 +5965,7 @@
 
         if (typeof data === 'string') { // image url
           context.invoke('editor.insertImage', data);
-        } else { // array of files
+        } else { // array of articles
           context.invoke('editor.insertImagesOrCallback', data);
         }
       }).fail(function () {

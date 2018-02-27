@@ -1,10 +1,17 @@
 #coding:utf-8
+from libs.flash.flash_lib import get_flashed_messages
+from sqlalchemy import func
+
 
 settings = dict(
     template_path = 'templates',
     static_path = 'static',
     debug = True,
     cookie_secret = 'test_mima_shishenme',
+    ui_methods={
+        "get_flashed_messages": get_flashed_messages,
+    },
+    login_url='admin/login',
     pycket={
         'engine': 'redis',  # 设置存储器类型
         'storage': {

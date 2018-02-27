@@ -1156,7 +1156,7 @@ vjs.createTimeRange = function(start, end){
 };
 
 /**
- * Simple http request for retrieving external files (e.g. text tracks)
+ * Simple http request for retrieving external articles (e.g. text tracks)
  * @param  {String} url           URL of resource
  * @param  {Function=} onSuccess  Success callback
  * @param  {Function=} onError    Error callback
@@ -3628,7 +3628,7 @@ vjs.Player.prototype.selectSource = function(sources){
  *
  * **URL String**: A URL to the the video file. Use this method if you are sure
  * the current playback technology (HTML5/Flash) can support the source you
- * provide. Currently only MP4 files can be used in both HTML5 and Flash.
+ * provide. Currently only MP4 articles can be used in both HTML5 and Flash.
  *
  *     myPlayer.src("http://www.example.com/path/to/video.mp4");
  *

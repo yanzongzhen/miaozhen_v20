@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>秒针空间后台管理</title>
 <link rel="stylesheet" type="text/css" href="{{static_url('admin/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{static_url('sweetalert/sweetalert.css')}}">
 <link rel="stylesheet" type="text/css" href="{{static_url('admin/css/style.css')}}">
 <link rel="stylesheet" href="{{static_url('admin/css/login.css')}}">
 <link rel="stylesheet" type="text/css" href="{{static_url('admin/css/font-awesome.min.css')}}">
@@ -25,21 +26,50 @@
 </head>
 
 <body class="user-select">
+{% for category, message in get_flashed_messages(with_categories=True) %}
+{% if category == 'error' %}
+<script
+type = "text/javascript" >
+swal({
+    'title': '错误',
+    'text': '{{ message }}',
+    'type': 'error',
+    'showCancelButton': false,
+    'showConfirmButton': false,
+    'timer': 2000
+});
+</script >
+{% elif category == 'success' %}
+<script
+type = "text/javascript" >
+swal({
+    'title': '正确',
+    'text': '{{ message }}',
+    'type': 'success',
+    'showCancelButton': false,
+    'showConfirmButton': false,
+    'timer': 2000
+})
+</script>
+{% end %}
+{% end %}
 <div class="container">
   <div class="siteIcon"><img src="{{static_url('admin/images/icon/icon.png')}}" alt="" data-toggle="tooltip" data-placement="top" title="欢迎使用秒针后台管理系统" draggable="false" /></div>
-  <form action="/admin" method="post" autocomplete="off" class="form-signin">
+  <form action="/admin/login" method="post" autocomplete="off" class="form-signin">
+      {% module xsrf_form_html() %}
     <h2 class="form-signin-heading">管理员登录</h2>
     <label for="userName" class="sr-only">用户名</label>
-    <input type="text" id="userName" name="username" class="form-control" placeholder="请输入用户名" required autofocus autocomplete="off" maxlength="10">
+    <input type="text" id="userName" name="username" class="form-control" placeholder="请输入用户名" required autofocus autocomplete="off" maxlength="30">
     <label for="userPwd" class="sr-only">密码</label>
     <input type="password" id="userPwd" name="userpwd" class="form-control" placeholder="请输入密码" required autocomplete="off" maxlength="18">
-    <a href="main.html"><button class="btn btn-lg btn-primary btn-block" type="submit" id="signinSubmit">登录</button></a>
+    <a href="/admin/login"><button class="btn btn-lg btn-primary btn-block" type="submit" id="signinSubmit">登录</button></a>
   </form>
   <div class="footer">
     <p><a href="/admin" data-toggle="tooltip" data-placement="left" title="不知道自己在哪?">回到后台 →</a></p>
   </div>
 </div>
 <script src="{{static_url('admin/js/bootstrap.min.js')}}"></script>
+<script src="{{static_url('sweetalert/sweetalert.min.js')}}"></script>
 <script>
 $('[data-toggle="tooltip"]').tooltip();
 window.oncontextmenu = function(){
