@@ -4,7 +4,7 @@
 {% block body %}
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
       <div class="row">
-        <form action="/admin/update_article?id={{article.id}}" method="post" class="add-article-form">
+        <form action="/admin/update_article"  rel="{{article.id}}" method="post" id="form_update" class="add-article-form">
           <div class="col-md-9">
             <h1 class="page-header">文章修改</h1>
             <div class="form-group">
@@ -13,19 +13,19 @@
             </div>
             <div class="form-group">
               <label for="article-content" class="sr-only">内容</label>
-              <script id="article-content" name="content" type="text/plain">{% raw article.content %}</script>
+              <div id="article-content" name="content">{% raw article.content %}</div>
             </div>
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>关键字</span></h2>
               <div class="add-article-box-content">
-              	<input type="text" class="form-control" placeholder="请输入关键字" value="{{article.keywords}}" name="keywords" autocomplete="off">
+              	<input type="text" class="form-control" id="article-keywords" placeholder="请输入关键字" value="{{article.keywords}}" name="keywords" autocomplete="off">
                 <span class="prompt-text">多个标签请用英文逗号,隔开。</span>
               </div>
             </div>
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>描述</span></h2>
               <div class="add-article-box-content">
-              	<textarea class="form-control" name="describe" autocomplete="off">{{article.desc}}</textarea>
+              	<textarea class="form-control" name="describe" id="article-desc" autocomplete="off">{{article.desc}}</textarea>
                 <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
               </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>标签</span></h2>
               <div class="add-article-box-content">
-                <input type="text" class="form-control" placeholder="输入新标签" value="{{article.tags}}" name="tags" autocomplete="off">
+                <input type="text" class="form-control" id="article-tags" placeholder="输入新标签" value="{{article.tags}}" name="tags" autocomplete="off">
                 <span class="prompt-text">多个标签请用英文逗号,隔开</span> </div>
             </div>
             <div class="add-article-box">
@@ -45,7 +45,7 @@
                 <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="time" value="{{article.createtime}}" /></span></p>
               </div>
               <div class="add-article-box-footer">
-                <button class="btn btn-primary" type="submit" name="submit">更新</button>
+                <button class="btn btn-primary" id="submit-btn" type="button" name="submit">更新</button>
               </div>
             </div>
           </div>
@@ -56,11 +56,75 @@
 </section>
 {% end %}
 {% block end %}
-<script src="{{static_url('admin/lib/ueditor/ueditor.config.js')}}"></script>
-<script src="{{static_url('admin/lib/ueditor/ueditor.all.min.js')}}"> </script>
-<script src="{{static_url('admin/lib/ueditor/lang/zh-cn/zh-cn.js')}}"></script>
-<script id="uploadEditor" type="text/plain" style="display:none;"></script>
+<script src="{{static_url('admin/lib/wangEdit/wangEditor.js')}}"></script>
 <script type="text/javascript">
-var editor = UE.getEditor('article-content');
+    var E = window.wangEditor;
+    var editor = new E('#article-content');
+    window.editor = editor;
+    editor.customConfig.lang = {
+        '设置标题': 'title',
+        '正文': 'p',
+        '链接文字': 'link text',
+        '链接': 'link',
+        '上传图片': 'upload image',
+        '上传': 'upload',
+        '创建': 'init'
+    };
+    window.editor.customConfig.pasteFilterStyle = false;
+    window.editor.customConfig.pasteTextHandle = function (content) {
+        return content
+    };
+    window.editor.customConfig.uploadImgMaxLength = 5;
+    window.editor.customConfig.uploadImgServer = '/upload';
+
+    window.editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;
+    window.editor.customConfig.uploadImgHooks = {
+        fail: function (xhr, editor, result) {
+            if(result.errno != 0){
+                alert(result.msg)
+            }
+        },
+
+    };
+    window.editor.create();
+    var submit_btn = $('#submit-btn');
+
+    //获取cookie
+    function get_cookie(name) {
+        var xsrf_cookies = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return xsrf_cookies[1]
+    }
+    submit_btn.click(function () {
+        var title = $('#article-title').val();
+        var keywords = $('#article-keywords').val();
+        var tags = $('#article-tags').val();
+        var desc = $('#article-desc').val();
+        var content = window.editor.txt.html();
+        var id = $('#form_update').attr('rel');
+        $.ajax({
+                'url':'/admin/update_article',
+                'type': 'post',
+                'data':{
+                    'id':id,
+                    'title':title,
+                    'keywords':keywords,
+                    'tags':tags,
+                    'desc':desc,
+                    'content':content,
+                },
+                cache: false,
+                'headers': {
+                    "X-XSRFTOKEN":get_cookie("_xsrf")
+                },
+                'success': function (data) {
+                if (data['status'] == 200){
+                    window.location="/admin/article";
+                }else{
+                    console.log(data['msg']);
+                }
+            }
+
+        })
+    });
 </script>
 {% end %}

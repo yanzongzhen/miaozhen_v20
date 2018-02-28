@@ -16,9 +16,10 @@ from handlers.Front.contact.contact_urls import f_contact_urls
 from handlers.Front.blog_view.blog_view_urls import f_blog_view_url
 from handlers.Front.project_view.peoject_view_urls import f_project_view_url
 from tornado.web import StaticFileHandler
+from handlers.Admin_modules.files.files_url import file_url
 handlers = [
     (r'/',MainHandler),
-    (r'/images/(.*\.(jpg|mp3|mp4|ogg))', StaticFileHandler, {'path': 'articles/'}),
+    (r'/images/(.*\.(jpg|mp3|mp4|ogg|png|JPG))', StaticFileHandler, {'path': 'files/image/'}),
 ]
 
 '''后端'''
@@ -31,6 +32,7 @@ handlers += notice_url
 handlers += set_urls
 handlers += user_urls
 handlers += contact_m_url
+handlers += file_url
 
 '''前端'''
 handlers += f_about_url

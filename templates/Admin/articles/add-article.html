@@ -12,7 +12,9 @@
             </div>
             <div class="form-group">
               <label for="article-content" class="sr-only">内容</label>
-              <script id="article-content" name="content" type="text/plain"></script>
+              <div id="article-content">
+
+              </div>
             </div>
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>关键字</span></h2>
@@ -44,7 +46,7 @@
                 <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="time" value="None" /></span></p>
               </div>
               <div class="add-article-box-footer">
-                <button class="btn btn-primary" type="submit" id="upload_btn" name="submit">发布</button>
+                <button class="btn btn-primary" type="button" id="submit-btn" name="submit">发布</button>
               </div>
             </div>
           </div>
@@ -55,12 +57,76 @@
 </section>
 {% end %}
 {% block end %}
-<script src="{{static_url('admin/lib/ueditor/ueditor.config.js')}}"></script>
-<script src="{{static_url('admin/lib/ueditor/ueditor.all.min.js')}}"> </script>
-<script src="{{static_url('admin/lib/ueditor/lang/zh-cn/zh-cn.js')}}"></script>
-<script id="uploadEditor" type="text/plain" style="display:none;"></script>
+<script src="{{static_url('admin/lib/wangEdit/wangEditor.js')}}"> </script>
 <script type="text/javascript">
-var editor = UE.getEditor('article-content');
+    var E = window.wangEditor;
+    var editor = new E('#article-content');
+    window.editor = editor;
+    // var editor = new E(document.getElementById('#article-content'));
+    window.editor.customConfig.lang = {
+        '设置标题': 'title',
+        '正文': 'p',
+        '链接文字': 'link text',
+        '链接': 'link',
+        '上传图片': 'upload image',
+        '上传': 'upload',
+        '创建': 'init'
+    };
+    window.editor.customConfig.pasteFilterStyle = false;
+    editor.customConfig.pasteTextHandle = function (content) {
+        return content + '<p>来自秒针智能</p>'
+    };
+    window.editor.customConfig.uploadImgServer = '/upload';
+    window.editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;
+    window.editor.customConfig.uploadImgMaxLength = 5;
+    window.editor.create();
+
+    window.editor.customConfig.uploadImgHooks = {
+        fail: function (xhr, editor, result) {
+            if(result.errno != 0){
+                alert(result.msg)
+            }
+        },
+
+    };
+
+    //数据提交
+    var submit_btn = $('#submit-btn');
+    //获取cookie
+    function get_cookie(name) {
+        var xsrf_cookies = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return xsrf_cookies[1]
+    }
+    submit_btn.click(function () {
+        var title = $('#article-title').val();
+        var keywords = $('#article-keywords').val();
+        var tags = $('#article-tag').val();
+        var desc = $('#article-desc').val();
+        var content = window.editor.txt.html();
+        $.ajax({
+                'url':'/admin/add_article',
+                'type': 'post',
+                'data':{
+                    'title':title,
+                    'keywords':keywords,
+                    'tags':tags,
+                    'desc':desc,
+                    'content':content,
+                },
+                'headers': {
+                    "X-XSRFTOKEN":get_cookie("_xsrf")
+                },
+                cache: false,
+                'success': function (data) {
+                if (data['status'] == 200){
+                   window.location="/admin/article";
+                }else{
+                    console.log(data['msg']);
+                }
+            }
+
+        })
+    });
 </script>
 
 {% end %}

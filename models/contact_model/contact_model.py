@@ -19,7 +19,7 @@ class Contact(Base):
 
     email = Column(String(50))
     mobile = Column(String(50))
-
+    create_time = Column(DateTime, index=True, default=datetime.now)
     address = Column(String(50))
     content = Column(Text)
 

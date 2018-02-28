@@ -14,13 +14,13 @@
      </div>
 </section>
 <section id="portfolio">
-	{% for pro in project %}
      <div class="container">
           <div class="row">
+              {% for pro in project %}
                <div class="col-md-4 col-sm-6">
                     <a href="/single-project?id={{pro.id}}">
                          <div class="portfolio-thumb">
-                              <img src="static/images/A.png" class="img-responsive" alt="Portfolio">
+                              <img src="{{pro.article_pic_name}}" class="img-responsive" alt="portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3>{{pro.title}}</h3>
@@ -29,8 +29,10 @@
                                    </div>
                          </div>
                     </a>
+
                </div>
                {% end %}
+
                <div class="col-md-12 col-sm-12 text-center">
                     <h3>如果你有不错的作品或创新想法，快来和我们交流一下吧！<a href="/contact">(点我上车)</a></h3>
                </div>

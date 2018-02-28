@@ -2,78 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b13600-f60a-4c84-a79a-c9491f75eaba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/image/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlers/Admin_modules/account/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlers/Admin_modules/account/user_handler.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/account/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/account/account_auth_libs.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/account/account_libs.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/articles/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/articles/article_lib.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/flinks/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/flinks/flinks_lib.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/setting/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/setting/setting_libs.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/flink_model/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/flink_model/flink_model.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/setting_model/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/setting_model/setting_model.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/sweetalert/sweetalert.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/sweetalert/sweetalert.min.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/handlers/Admin_modules/files/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/handlers/Admin_modules/files/files_handler.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/handlers/Admin_modules/files/files_url.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/contact/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/contact/contact_lib.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/files/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/files/file_lib.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/fonts/w-e-icon.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test_re.py" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/395599d1-f833-4007-ba79-ccfcede63694.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/395599d1-f833-4007-ba79-ccfcede63694.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin/admin_handler.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin/admin_handler.py" />
       <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_handler.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_handler.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_urls.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_urls.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_hanlder.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_hanlder.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_urls.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_urls.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_setting/setting_handler.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_setting/setting_handler.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_user/__init__.py" afterPath="$PROJECT_DIR$/files/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_user/user_handler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_user/user_urls.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/account/user_urls.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Front/about/about_handler.py" afterPath="$PROJECT_DIR$/handlers/Front/about/about_handler.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Front/blog/blog_handler.py" afterPath="$PROJECT_DIR$/handlers/Front/blog/blog_handler.py" />
-      <change beforePath="$PROJECT_DIR$/handlers/Front/blog_view/blog_view_handler.py" afterPath="$PROJECT_DIR$/handlers/Front/blog_view/blog_view_handler.py" />
+      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_hanlder.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_hanlder.py" />
+      <change beforePath="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_urls.py" afterPath="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_urls.py" />
       <change beforePath="$PROJECT_DIR$/handlers/Front/contact/contact_handler.py" afterPath="$PROJECT_DIR$/handlers/Front/contact/contact_handler.py" />
+      <change beforePath="$PROJECT_DIR$/handlers/Front/project_view/peoject_view_urls.py" afterPath="$PROJECT_DIR$/handlers/Front/project_view/peoject_view_urls.py" />
       <change beforePath="$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py" afterPath="$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py" />
       <change beforePath="$PROJECT_DIR$/handlers/main/main_hanlder.py" afterPath="$PROJECT_DIR$/handlers/main/main_hanlder.py" />
       <change beforePath="$PROJECT_DIR$/handlers/main/main_urls.py" afterPath="$PROJECT_DIR$/handlers/main/main_urls.py" />
-      <change beforePath="$PROJECT_DIR$/models/article_model/article_model.py" afterPath="$PROJECT_DIR$/models/article_model/article_model.py" />
-      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin-scripts.js" afterPath="$PROJECT_DIR$/static/admin/js/admin-scripts.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/summernote/summernote.js" afterPath="$PROJECT_DIR$/static/admin/lib/summernote/summernote.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/summernote/summernote.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/summernote/summernote.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/lang/en/en.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/lang/en/en.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/php/config.json" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/php/config.json" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCore.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/jquery-1.10.2.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/video-js/video.dev.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/admin_base/base.html" afterPath="$PROJECT_DIR$/templates/Admin/admin_base/base.html" />
+      <change beforePath="$PROJECT_DIR$/libs/articles/article_lib.py" afterPath="$PROJECT_DIR$/libs/articles/article_lib.py" />
+      <change beforePath="$PROJECT_DIR$/models/contact_model/contact_model.py" afterPath="$PROJECT_DIR$/models/contact_model/contact_model.py" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
       <change beforePath="$PROJECT_DIR$/templates/Admin/articles/add-article.html" afterPath="$PROJECT_DIR$/templates/Admin/articles/add-article.html" />
       <change beforePath="$PROJECT_DIR$/templates/Admin/articles/article.html" afterPath="$PROJECT_DIR$/templates/Admin/articles/article.html" />
       <change beforePath="$PROJECT_DIR$/templates/Admin/articles/update-article.html" afterPath="$PROJECT_DIR$/templates/Admin/articles/update-article.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/flinks/add-flink.html" afterPath="$PROJECT_DIR$/templates/Admin/flinks/add-flink.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/flinks/flink.html" afterPath="$PROJECT_DIR$/templates/Admin/flinks/flink.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/flinks/update-flink.html" afterPath="$PROJECT_DIR$/templates/Admin/flinks/update-flink.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/index.html" afterPath="$PROJECT_DIR$/templates/Admin/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/setting/setting.html" afterPath="$PROJECT_DIR$/templates/Admin/setting/setting.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/usermanages/login.html" afterPath="$PROJECT_DIR$/templates/Admin/usermanages/login.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Admin/usermanages/manage-user.html" afterPath="$PROJECT_DIR$/templates/Admin/usermanages/manage-user.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Front/about/about.html" afterPath="$PROJECT_DIR$/templates/Front/about/about.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Front/base/base.html" afterPath="$PROJECT_DIR$/templates/Front/base/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/contact/contact.html" afterPath="$PROJECT_DIR$/templates/Admin/contact/contact.html" />
+      <change beforePath="$PROJECT_DIR$/templates/Front/index.html" afterPath="$PROJECT_DIR$/templates/Front/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/Front/project/project.html" afterPath="$PROJECT_DIR$/templates/Front/project/project.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,6 +46,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/miaozhen_v20$server.coverage" NAME="server Coverage Results" MODIFIED="1519354260495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/miaozhen_v20$test_re.coverage" NAME="test_re Coverage Results" MODIFIED="1519798917505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -117,7 +80,52 @@
     <favorites_list name="miaozhen_v20" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Admin/contact/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="106" column="26" lean-forward="true" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_manage_hanlder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_hanlder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="23" />
+              <folding>
+                <element signature="e#14#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_manage_urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_lib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/contact/contact_lib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+              <folding>
+                <element signature="e#14#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,9 +143,12 @@
       <find>update-flink.html</find>
       <find>userid</find>
       <find>set[-1]</find>
-      <find>uploadEditor</find>
       <find>imageUrlPrefix</find>
       <find>pictureUpload</find>
+      <find>uploadEditor</find>
+      <find>files</find>
+      <find>uploadImgServer</find>
+      <find>image</find>
     </findStrings>
     <replaceStrings>
       <replace>/update_category</replace>
@@ -153,20 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/accounts/account_user_model.py" />
-        <option value="$PROJECT_DIR$/models/Blog_model/blog_model.py" />
-        <option value="$PROJECT_DIR$/models/contact_model/contact_model.py" />
-        <option value="$PROJECT_DIR$/handlers/base/base_hanlder.py" />
-        <option value="$PROJECT_DIR$/libs/db/create_talbes.py" />
-        <option value="$PROJECT_DIR$/libs/db/dbsession.py" />
-        <option value="$PROJECT_DIR$/models/flink_model/flink_model.py" />
-        <option value="$PROJECT_DIR$/server.py" />
-        <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_user/user_handler.py" />
-        <option value="$PROJECT_DIR$/libs/flash/flash_lib.py" />
-        <option value="$PROJECT_DIR$/templates/Admin/usermanages/register.html" />
-        <option value="$PROJECT_DIR$/templates/Admin/usermanages/login.html" />
-        <option value="$PROJECT_DIR$/libs/account/account_auth_libs.py" />
-        <option value="$PROJECT_DIR$/static/admin/js/admin-scripts.js" />
         <option value="$PROJECT_DIR$/templates/Admin/usermanages/manage-user.html" />
         <option value="$PROJECT_DIR$/templates/Admin/flinks/add-flink.html" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_urls.py" />
@@ -177,33 +174,47 @@
         <option value="$PROJECT_DIR$/models/setting_model/setting_model.py" />
         <option value="$PROJECT_DIR$/libs/setting/setting_libs.py" />
         <option value="$PROJECT_DIR$/templates/Front/base/base.html" />
-        <option value="$PROJECT_DIR$/handlers/main/main_hanlder.py" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_setting/setting_handler.py" />
         <option value="$PROJECT_DIR$/handlers/Front/about/about_handler.py" />
         <option value="$PROJECT_DIR$/handlers/Front/blog/blog_handler.py" />
         <option value="$PROJECT_DIR$/handlers/Front/blog_view/blog_view_handler.py" />
-        <option value="$PROJECT_DIR$/handlers/Front/contact/contact_handler.py" />
-        <option value="$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py" />
         <option value="$PROJECT_DIR$/templates/Front/about/about.html" />
         <option value="$PROJECT_DIR$/libs/account/account_libs.py" />
         <option value="$PROJECT_DIR$/templates/Admin/index.html" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/admin/admin_handler.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/templates/Admin/admin_base/base.html" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/account/user_urls.py" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/account/user_handler.py" />
         <option value="$PROJECT_DIR$/static/admin/lib/ueditor/php/config.json" />
-        <option value="$PROJECT_DIR$/handlers/main/main_urls.py" />
         <option value="$PROJECT_DIR$/static/admin/lib/ueditor/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/templates/Admin/articles/add-article.html" />
         <option value="$PROJECT_DIR$/libs/files/file_libs.py" />
         <option value="$PROJECT_DIR$/models/article_model/article_model.py" />
-        <option value="$PROJECT_DIR$/templates/Admin/articles/update-article.html" />
         <option value="$PROJECT_DIR$/templates/Admin/flinks/update-flink.html" />
-        <option value="$PROJECT_DIR$/templates/Admin/articles/article.html" />
-        <option value="$PROJECT_DIR$/libs/articles/article_lib.py" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_urls.py" />
+        <option value="$PROJECT_DIR$/templates/Admin/admin_base/base.html" />
+        <option value="$PROJECT_DIR$/templates/Admin/articles/article.html" />
+        <option value="$PROJECT_DIR$/handlers/Admin_modules/files/files_url.py" />
+        <option value="$PROJECT_DIR$/handlers/main/main_urls.py" />
+        <option value="$PROJECT_DIR$/templates/Admin/articles/add-article.html" />
+        <option value="$PROJECT_DIR$/libs/files/file_lib.py" />
+        <option value="$PROJECT_DIR$/handlers/Admin_modules/files/files_handler.py" />
+        <option value="$PROJECT_DIR$/templates/Admin/articles/update-article.html" />
+        <option value="$PROJECT_DIR$/handlers/main/main_hanlder.py" />
+        <option value="$PROJECT_DIR$/test_re.py" />
         <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_handler.py" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/Front/index.html" />
+        <option value="$PROJECT_DIR$/handlers/Front/project_view/peoject_view_urls.py" />
+        <option value="$PROJECT_DIR$/libs/articles/article_lib.py" />
+        <option value="$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py" />
+        <option value="$PROJECT_DIR$/templates/Front/project/project.html" />
+        <option value="$PROJECT_DIR$/handlers/Front/contact/contact_handler.py" />
+        <option value="$PROJECT_DIR$/templates/Front/contact/contact.html" />
+        <option value="$PROJECT_DIR$/models/contact_model/contact_model.py" />
+        <option value="$PROJECT_DIR$/templates/Admin/contact/contact.html" />
+        <option value="$PROJECT_DIR$/libs/contact/contact_lib.py" />
+        <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_hanlder.py" />
+        <option value="$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_urls.py" />
       </list>
     </option>
   </component>
@@ -213,8 +224,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="96" />
+    <option name="y" value="62" />
     <option name="width" value="1440" />
     <option name="height" value="805" />
   </component>
@@ -236,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,29 +261,28 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/admin/lib" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/templates/Admin/usermanages" />
+      <recent name="$PROJECT_DIR$/templates/Admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/handlers/Admin_modules" />
       <recent name="$PROJECT_DIR$/templates/Admin" />
       <recent name="$PROJECT_DIR$/templates/Admin/admin_base" />
       <recent name="$PROJECT_DIR$/static/admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/templates/Admin/usermanages" />
-      <recent name="$PROJECT_DIR$/templates/Admin" />
-      <recent name="$PROJECT_DIR$/templates/Front" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test_re">
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,9 +317,33 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test_re" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="miaozhen_v20" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_re.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.server" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test_re" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.server" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.test_re" />
+        <item index="1" class="java.lang.String" itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -345,28 +381,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
+    <frame x="96" y="62" width="1440" height="805" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22889842" sideWeight="0.4943662" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23175965" sideWeight="0.4887324" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23819743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22889842" sideWeight="0.50563383" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23175965" sideWeight="0.5112676" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -382,297 +418,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/Admin/flinks/flink.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="120" column="45" lean-forward="false" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_flinks/flink_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3055b37/395599d1-f833-4007-ba79-ccfcede63694/miaozhen_v20.setting">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_setting/setting_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/setting_model/setting_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/about/ablout_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/about/about_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/blog/blog_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/blog_view/blog_view_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/contact/contact_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/project_view/peoject_view_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#14#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/main/main_hanlder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/setting/setting_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Front/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Front/about/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/pagination/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/pagination/pagination_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin/admin_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/accounts/account_user_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/usermanages/manage-user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/setting/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/base/base_hanlder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/account/user_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin/admin_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="e#15#65#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/admin_base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/lib/ueditor/dialogs/internal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/lib/ueditor/php/action_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/lib/ueditor/php/action_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/main/main_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/lib/ueditor/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1678">
           <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-393">
           <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,9 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6581">
           <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,40 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="27159" column="8" lean-forward="false" selection-start-line="27159" selection-start-column="8" selection-end-line="27159" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/add-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="45" lean-forward="true" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#script#3;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/account/account_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3055b37/395599d1-f833-4007-ba79-ccfcede63694/miaozhen_v20.article_article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/article_model/article_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,15 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/update-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,43 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="57" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/articles/article_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="e#14#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,14 +477,367 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/notices/add-notice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-639">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/categorys/update-category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3055b37/395599d1-f833-4007-ba79-ccfcede63694/miaozhen_v20.article_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/files/files_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/remote_sources/283608337/201544331/cgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6629">
+          <caret line="563" column="28" lean-forward="false" selection-start-line="563" selection-start-column="23" selection-end-line="563" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/remote_sources/283608337/600605769/tornado/httputil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6133">
+          <caret line="344" column="27" lean-forward="false" selection-start-line="344" selection-start-column="27" selection-end-line="344" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/remote_sources/283608337/-602115163/tornado/httputil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/lib/wangEdit/wangEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2871">
+          <caret line="4342" column="4" lean-forward="false" selection-start-line="4342" selection-start-column="4" selection-end-line="4342" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/update-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="6" lean-forward="true" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/add-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="90" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/main/main_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="90" lean-forward="false" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+          <folding>
+            <element signature="e#14#64#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/files/file_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/qiniu/qiniu_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/files/files_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/article_model/article_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Front/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/main/main_hanlder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#64#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_articles/article_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="e#14#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/articles/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Front/blog_view/blog_view_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Front/project_view/peoject_view_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/articles/article_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Front/project/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Front/project_view/project_view_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3055b37/395599d1-f833-4007-ba79-ccfcede63694/miaozhen_v20.contact">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Front/contact/contact_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Blog_model/blog_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="50" column="66" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/contact_model/contact_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Front/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/comments/comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/admin_base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1921">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/account/user_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/account/account_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/account/user_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="278">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/usermanages/manage-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/contact/contact_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="e#14#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_hanlder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#14#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Admin/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="106" column="26" lean-forward="true" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Admin_modules/admin_contact/contact_manage_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>

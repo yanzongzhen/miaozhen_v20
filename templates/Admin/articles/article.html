@@ -24,7 +24,7 @@
             {%for article in articles%}
               <tr>
                 <td><input type="checkbox" class="input-control" name="checkbox[]" value="" /></td>
-                <td class="article-title">{% raw article.content %}</td>
+                <td class="article-title">{% raw article.title %}</td>
                 <td class="hidden-sm">{{article.tags}}</td>
                 <td class="hidden-sm">0</td>
                 <td>{{article.createtime}}</td>
