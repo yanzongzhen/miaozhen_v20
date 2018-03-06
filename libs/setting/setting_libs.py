@@ -2,6 +2,7 @@
 
 from libs.db.dbsession import dbSession
 from models.setting_model.setting_model import Setting
+from  models.flink_model.flink_model import Flink
 
 def get_list_lib(self):
     all_set = dbSession.query(Setting).order_by(Setting.createtime.desc()).first()
@@ -23,4 +24,7 @@ def update_setting_lib(self,title,se_title,url,keywords,desc,email,icp,limit_tim
     self.db.add(sets)
     self.db.commit()
     return {'status':True,'msg':'OK'}
+
+def get_list_flink_lib(self):
+    return Flink.all()
 

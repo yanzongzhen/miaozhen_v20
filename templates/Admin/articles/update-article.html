@@ -56,37 +56,43 @@
 </section>
 {% end %}
 {% block end %}
-<script src="{{static_url('admin/lib/wangEdit/wangEditor.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{static_url('admin/lib/summernote/summernote.css')}}">
+<script src="{{static_url('admin/lib/summernote/summernote.js')}}"></script>
+<script src="{{static_url('admin/lib/summernote/lang/summernote-zh-CN.js')}}"></script>
 <script type="text/javascript">
-    var E = window.wangEditor;
-    var editor = new E('#article-content');
-    window.editor = editor;
-    editor.customConfig.lang = {
-        '设置标题': 'title',
-        '正文': 'p',
-        '链接文字': 'link text',
-        '链接': 'link',
-        '上传图片': 'upload image',
-        '上传': 'upload',
-        '创建': 'init'
-    };
-    window.editor.customConfig.pasteFilterStyle = false;
-    window.editor.customConfig.pasteTextHandle = function (content) {
-        return content
-    };
-    window.editor.customConfig.uploadImgMaxLength = 5;
-    window.editor.customConfig.uploadImgServer = '/upload';
-
-    window.editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;
-    window.editor.customConfig.uploadImgHooks = {
-        fail: function (xhr, editor, result) {
-            if(result.errno != 0){
-                alert(result.msg)
+    $('#article-content').summernote({
+	    lang: 'zh-CN',
+        height:250,
+        minHeight:250,
+        maxHeight:250,
+        focus:true,
+        callbacks: {
+	        onImageUpload:function (files,editor,$editable) {
+                sendFile(files);
             }
-        },
-
-    };
-    window.editor.create();
+        }
+    });
+    function sendFile(files, editor, $editable) {
+        var formdata = new FormData();
+        formdata.append("file", $('.note-image-input')[0].files[0]);
+        $.ajax({
+            data : formdata,
+            type : "POST",
+            url : "/upload", //图片上传出来的url，返回的是图片上传后的路径，http格式
+            cache : false,
+            contentType : false,
+            processData : false,
+            dataType : "json",
+            success: function(data) {
+                //data是返回的hash,key之类的值，key是定义的文件名
+                console.log(data);
+                $('#article-content').summernote('insertImage', data.data);
+            },
+            error:function(){
+                alert("上传失败");
+            }
+        });
+    }
     var submit_btn = $('#submit-btn');
 
     //获取cookie
@@ -99,7 +105,7 @@
         var keywords = $('#article-keywords').val();
         var tags = $('#article-tags').val();
         var desc = $('#article-desc').val();
-        var content = window.editor.txt.html();
+        var content = $('#article-content').summernote('code');;
         var id = $('#form_update').attr('rel');
         $.ajax({
                 'url':'/admin/update_article',

@@ -1,8 +1,14 @@
 #coding=utf-8
 from datetime import datetime
+
+from models.Blog_model.blog_model import Blog, Comment
 from models.accounts.account_user_model import User
 from sqlalchemy import func
 from libs.db.dbsession import dbSession
+from models.article_model.article_model import Article
+from models.flink_model.flink_model import Flink
+
+
 def edit_profile(self,name, password,old_passwd,new_passwd,phone):
     """编辑个人信息"""
     if password == "":
@@ -28,8 +34,13 @@ def get_user_info(self):
     return user,counts
 
 def get_some_info_lib(self,name):
+    blog_count = dbSession.query(func.count(Blog.id)).scalar()
+    comment_count = dbSession.query(func.count(Comment.id)).scalar()
+    flink_count = dbSession.query(func.count(Flink.id)).scalar()
+    project_count = dbSession.query(func.count(Article.id)).scalar()
+    admin_count = dbSession.query(func.count(User.id)).scalar()
     user = User.by_name(name)
-    return user
+    return user,blog_count,comment_count,flink_count,project_count,admin_count
 
 def user_see(self,uid):
     user = User.by_id(uid)

@@ -53,7 +53,7 @@ class Comment(Base):
     article_id = Column(Integer, ForeignKey('blog.id', ondelete="CASCADE"))
     #与用户表建立外键关系
     user_id = Column(Integer, ForeignKey('user.id'))
-
+    name = Column(String(50))
     # 建立orm查询关系,评论表与二级评论表的一对多关系
     second_comments = relationship('SecondComment', backref='comment', order_by=-SecondComment.createtime)
 
@@ -89,7 +89,7 @@ class Blog(Base):
     createtime = Column(DateTime, index=True, default=datetime.now)
     state =Column(Boolean,default=False)
     opened = Column(Boolean,default=False)
-
+    keywords = Column(String(50))
     # 与用户建立外键关系
     user_id = Column(Integer, ForeignKey('user.id'))
 

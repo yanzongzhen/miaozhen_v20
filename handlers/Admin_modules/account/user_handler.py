@@ -36,7 +36,7 @@ class AddUserHandler(BaseHandler):
         name = self.get_argument('username','')
         password = self.get_argument('userpwd','')
         twice_passwd = self.get_argument('new_password','')
-        phone = self.get_argument('phone','')
+        phone = self.get_argument('usertel','')
         result = register(self,name,password,twice_passwd,phone)
         if result['status'] is True:
             print result['msg']
@@ -82,8 +82,7 @@ class LoginHandler(BaseHandler):
     def post(self):
         name = self.get_argument('username', '')
         password = self.get_argument('userpwd', '')
-
-        result = login(self, name, password,)
+        result = login(self, name, password)
         if result['status'] is True:
             return self.redirect('/admin')
         return self.write({'status': 400, 'msg': result['msg']})

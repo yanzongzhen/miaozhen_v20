@@ -14,7 +14,7 @@
                          </div>
 
                          <div class="blog-post-format">
-                              <span><a href="#"><img src="{{static_url('images/author-image1.jpg')}}" class="img-responsive img-circle">Miaozhen</a></span>
+                              <span><a href="#">{{current_user.name}}</a></span>
                               <span><i class="fa fa-date"></i>{{blog.createtime}}</span>
                               <span><a href="#"><i class="fa fa-comment-o"></i>{{len(blog.comments)}}</a></span>
                               <span><a href="#"><i class="fa fa-read-o"></i></a>阅读数{{blog.readnum}}</span>
@@ -27,13 +27,10 @@
                               <h3>{{len(blog.comments)}} Comments</h3>
 	                         {% for comment in comments %}
                                    <div class="media">
-                                        <div class="media-object pull-left">
-                                             <img src="{{static_url('images/comment-image1.jpg')}}" class="img-responsive img-circle" alt="Blog Image">
-                                        </div>
                                         <div class="media-body">
                                              <h3 class="media-heading">{{comment.name}}</h3>
                                                   <span>{{comment.createtime}}</span>
-                                                  <p>{{comment.msg}}</p>
+                                                  <p>{{comment.content}}</p>
                                         </div>
                                    </div>
 	                         {%  end %}
@@ -57,7 +54,7 @@
 				                         var email = $('#email-input').val();
 				                         var blog_id = $('#submit-btn').attr('data-id');
 				                         $.ajax({
-					                        'url':'/single-post',
+					                        'url':'/single-post/comment',
 					                        'type':'post',
 					                        'data':{
 					                            'Comments':Comments,

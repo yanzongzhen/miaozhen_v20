@@ -16,21 +16,38 @@ def pic_parse(self,imgs):
             "body":body
         }
 
-def save_pic(self,img_list):
-    if img_list:
+# def save_pic(self,img_list):
+#     if img_list:
+#         url = []
+#         exists_url = []
+#         for img in img_list:
+#             filebody = img['body']
+#             filename = img['filename']
+#             url.append(base_pic_url+filename)
+#             save_url = 'files/image/'+filename
+#             if os.path.exists(save_url):
+#                 old_pic_url = base_pic_url+filename
+#                 exists_url.append(old_pic_url)
+#                 return {'status':True,'msg':'OK but exists','data':exists_url}
+#             with open(save_url,'wb') as f:
+#                 f.write(filebody)
+#         return {'status':True,'msg':'OK','data':url}
+#     else:
+#         return {'status':False,'msg':'Error'}
+
+def save_pic(self,imgs):
+    for upload_file in imgs:
         url = []
         exists_url = []
-        for img in img_list:
-            filebody = img['body']
-            filename = img['filename']
-            url.append(base_pic_url+filename)
-            save_url = 'files/image/'+filename
-            if os.path.exists(save_url):
-                old_pic_url = base_pic_url+filename
-                exists_url.append(old_pic_url)
-                return {'status':True,'msg':'OK but exists','data':exists_url}
-            with open(save_url,'wb') as f:
-                f.write(filebody)
+        filebody = upload_file['body']
+        filename = upload_file['filename']
+        url.append(base_pic_url + filename)
+        save_url = 'files/image/' + filename
+        if os.path.exists(save_url):
+            old_pic_url = base_pic_url + filename
+            exists_url.append(old_pic_url)
+            return {'status': True, 'msg': 'OK but exists', 'data': exists_url}
+        with open(save_url, 'wb') as f:
+            f.write(filebody)
         return {'status':True,'msg':'OK','data':url}
-    else:
-        return {'status':False,'msg':'Error'}
+    return {'status':False,'msg':'error'}

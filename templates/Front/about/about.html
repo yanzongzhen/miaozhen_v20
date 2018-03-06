@@ -22,14 +22,19 @@
                     </div>
 
                     <div class="clearfix"></div>
-
-                     <hr>
+                   <hr>
                     <div style="text-align: center">
-                         <p>因为专注，所以更加专业</p>
-                         <p>因为专业，所以更中诚信</p>
-                    </div>
-                     <hr>
+                        <h3>友情链接</h3>
+                         <ul style="list-style: none">
+                            {% for flink in flinks %}
+                            <li>{{flink.name}}:{{flink.url}}</li>
+                            {% end %}
+                         </ul>
 
+                    </div>
+                   <br>
+                   <hr>
+                   <br>
                     <div class="col-md-4 col-sm-6">
                          <h3>创客资源</h3>
                          <ul>

@@ -14,7 +14,7 @@
                          <h3><a href="/single-post?blog_id={{b.id}}">{{b.title}}</a></h3>
                     </div>
                     <div class="blog-post-format">
-                        <span><a href="#"><img src="{{static_url('images/author-image1.jpg')}}" class="img-responsive img-circle"> Miaozhen</a></span>
+                        <span><a href="#">{{current_user.name}}</a></span>
                         <span><i class="fa fa-date"></i>{{b.createtime}}</span>
                         <span><a href="#"><i class="fa fa-comment-o"></i>评论{{len(b.comments)}}</a></span>
                     </div>

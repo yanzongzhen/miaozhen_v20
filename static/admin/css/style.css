@@ -11,6 +11,9 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, button, input, texta
 	-o-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
 }
+a {
+    color: black;
+}
 dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, span, th, tr, td {
 	cursor: default;
 }
@@ -19,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 body {
 	color: #444;
-	background-color: #EEE;
+	/*background-color: #EEE;*/
 	overflow-x: hidden;
 	padding-top: 50px;
 }

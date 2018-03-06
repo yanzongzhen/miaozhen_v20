@@ -4,28 +4,31 @@
 {% block body %}
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
       <div class="row">
-        <form action="test.php" method="post" class="add-article-form">
+        <form class="add-article-form">
           <div class="col-md-9">
             <h1 class="page-header">撰写新blog</h1>
             <div class="form-group">
-              <label for="article-title" class="sr-only">标题</label>
-              <input type="text" id="article-title" name="title" class="form-control" placeholder="在此处输入标题" required autofocus autocomplete="off">
+              <label for="blog-title" class="sr-only">标题</label>
+              <input type="text" id="blog-title" name="title" class="form-control" placeholder="在此处输入标题" required autofocus autocomplete="off">
             </div>
             <div class="form-group">
-              <label for="article-content" class="sr-only">内容</label>
-              <textarea id="article-content" name="content" class="form-control"></textarea>
+              <label for="blog-content" class="sr-only">内容</label>
+
+              <div id="blog-content">
+
+              </div>
             </div>
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>关键字</span></h2>
               <div class="add-article-box-content">
-              	<input type="text" class="form-control" placeholder="请输入关键字" name="keywords" autocomplete="off">
+              	<input type="text" class="form-control" id="blog-keywords" placeholder="请输入关键字" name="keywords" autocomplete="off">
                 <span class="prompt-text">多个标签请用英文逗号,隔开。</span>
               </div>
             </div>
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>描述</span></h2>
               <div class="add-article-box-content">
-              	<textarea class="form-control" name="describe" autocomplete="off"></textarea>
+              	<textarea class="form-control" name="describe" id="blog-desc" autocomplete="off"></textarea>
                 <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
               </div>
             </div>
@@ -36,11 +39,10 @@
               <h2 class="add-article-box-title"><span>发布</span></h2>
               <div class="add-article-box-content">
               	<p><label>状态：</label><span class="article-status-display">未发布</span></p>
-                <p><label>公开度：</label><input type="radio" name="visibility" value="0" checked/>公开 <input type="radio" name="visibility" value="1" />加密</p>
-                <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="time" value="2016-01-09 17:29:37" /></span></p>
+                <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="time" value="" /></span></p>
               </div>
               <div class="add-article-box-footer">
-                <button class="btn btn-primary" type="submit" name="submit">发布</button>
+                <button class="btn btn-primary" type="button" id="submit-btn" >发布</button>
               </div>
             </div>
           </div>
@@ -56,8 +58,73 @@
 <script src="{{static_url('admin/lib/summernote/summernote.js')}}"></script>
 <script src="{{static_url('admin/lib/summernote/lang/summernote-zh-CN.js')}}"></script>
 <script>
-$('#article-content').summernote({
-	lang: 'zh-CN'
-});
+    $('#blog-content').summernote({
+	    lang: 'zh-CN',
+        height:250,
+        minHeight:250,
+        maxHeight:250,
+        focus:true,
+        callbacks: {
+	        onImageUpload:function (files,editor,$editable) {
+                sendFile(files);
+            }
+        }
+    });
+    function sendFile(files, editor, $editable) {
+        var formdata = new FormData();
+        formdata.append("file", $('.note-image-input')[0].files[0]);
+        $.ajax({
+            data : formdata,
+            type : "POST",
+            url : "/upload", //图片上传出来的url，返回的是图片上传后的路径，http格式
+            cache : false,
+            contentType : false,
+            processData : false,
+            dataType : "json",
+            success: function(data) {
+                //data是返回的hash,key之类的值，key是定义的文件名
+                $('#blog-content').summernote('insertImage', data.data);
+            },
+            error:function(){
+                alert("上传失败");
+            }
+        });
+    }
+        //数据提交
+    var submit_btn = $('#submit-btn');
+    //获取cookie
+    function get_cookie(name) {
+        var xsrf_cookies = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return xsrf_cookies[1]
+    }
+    submit_btn.click(function () {
+        var title = $('#blog-title').val();
+        var keywords = $('#blog-keywords').val();
+        var desc = $('#blog-desc').val();
+        var content = $('#blog-content').summernote('code');
+        $.ajax({
+                'url':'/admin/add_blog',
+                'type': 'post',
+                'data':{
+                    'title':title,
+                    'keywords':keywords,
+                    'desc':desc,
+                    'content':content
+                },
+                'headers': {
+                    "X-XSRFTOKEN":get_cookie("_xsrf")
+                },
+                cache: false,
+                'success': function (data) {
+                if (data['status'] == 200){
+                   window.location="/admin/blog";
+                }else{
+                    console.log(data['msg']);
+                }
+            }
+
+        })
+    });
+
 </script>
 {% end %}
